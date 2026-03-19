@@ -57,7 +57,7 @@ public class AtmService
         return _currentCard!.Account.Deposit(amount);
     }
     
-    private void EnsureAuthenticated()
+    public void EnsureAuthenticated()
     {
         if (_currentCard == null || !_isAuthenticated)
         {
